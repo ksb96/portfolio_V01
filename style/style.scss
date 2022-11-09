@@ -1,0 +1,582 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+@mixin hoverUnderline {
+    content: '';
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    bottom: 0;
+    left: 0;
+    transition: all 300ms ease-in-out;
+    border-radius: 20px;
+}
+
+header {
+    height: 100vh;
+    background: url("../images/mobile/image-hero.jpg") no-repeat top;
+    background-size: cover;
+    padding: 0 1.3rem;
+
+    .upperBar {
+        display: inline-flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 2rem 0;
+
+        .siteLogoContainer {
+            width: 35%;
+
+            .siteLogo {
+                width: 100%;
+            }
+        }
+
+        .mobileMenu {
+            label {
+                cursor: pointer;
+            }
+
+            input {
+                display: none;
+            }
+        }
+    }
+
+    .desktopMenu {
+        display: none;
+    }
+
+    .moto-container {
+        margin-top: 8.5rem;
+        border: 1px solid white;
+        padding: 1.5rem;
+
+        .moto {
+            font-size: 2.7rem;
+            line-height: 43px;
+            font-weight: 300;
+            color: white;
+        }
+    }
+
+}
+
+main {
+    .vr {
+        padding: 6rem 1.3rem;
+
+        .vrImage {
+            width: 100%;
+            height: 14.6rem;
+            background: url("../images/mobile/image-interactive.jpg") no-repeat top;
+            background-size: contain;
+        }
+
+        .info {
+            margin: 2.5rem auto 0;
+            text-align: center;
+            width: 90%;
+
+            .interhead {
+                font-size: 2rem;
+                font-weight: 300;
+            }
+
+            article {
+                margin-top: 2.5rem;
+                line-height: 25px;
+                margin-top: 1.5rem;
+                font-family: 'Alata', sans-serif;
+                color: hsl(0, 0%, 55%);
+            }
+        }
+    }
+
+    .creation {
+        text-align: center;
+
+        .creat {
+            font-size: 2rem;
+            font-weight: 300;
+        }
+
+        .creat-grid {
+            margin-top: 2rem;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(8, 1fr);
+            align-items: center;
+            justify-items: center;
+            row-gap: 1rem;
+
+            div {
+                width: 21.1rem;
+                height: 7.8rem;
+                position: relative;
+                box-shadow: inset 20px 0 80px black;
+
+                h3 {
+                    text-align: left;
+                    padding: 0 1rem;
+                    position: absolute;
+                    bottom: 10px;
+                    color: white;
+                    font-weight: 300;
+                    font-size: 1.5rem;
+                    width: 50%;
+                }
+            }
+
+            .earth {
+                background: url("../images/mobile/image-deep-earth.jpg") no-repeat top;
+                background-size: contain;
+            }
+
+            .night {
+                background: url("../images/mobile/image-night-arcade.jpg") no-repeat top;
+                background-size: contain;
+            }
+
+            .soccer {
+                background: url("../images/mobile/image-soccer-team.jpg") no-repeat top;
+                background-size: contain;
+            }
+
+            .grid {
+                background: url("../images/mobile/image-grid.jpg") no-repeat top;
+                background-size: contain;
+            }
+
+            .above {
+                background: url("../images/mobile/image-from-above.jpg") no-repeat top;
+                background-size: contain;
+            }
+
+            .pocket {
+                background: url("../images/mobile/image-pocket-borealis.jpg") no-repeat top;
+                background-size: contain;
+            }
+
+            .curiosity {
+                background: url("../images/mobile/image-curiosity.jpg") no-repeat top;
+                background-size: contain;
+            }
+
+            .FISHEYE {
+                background: url("../images/mobile/image-fisheye.jpg") no-repeat top;
+                background-size: contain;
+            }
+        }
+
+        .all {
+            margin-top: 2rem;
+            border: 1px black solid;
+            padding: .5rem 3rem;
+            font-size: 1rem;
+            background-color: transparent;
+            font-family: 'Alata', sans-serif;
+            word-spacing: 8px;
+            letter-spacing: 3px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: black;
+                color: white;
+            }
+        }
+
+    }
+}
+
+footer {
+    padding: 3rem 0;
+    margin-top: 6rem;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .siteLogoContainer {
+        margin: auto;
+        width: 85%;
+
+        .siteLogo {
+            width: 100%;
+        }
+    }
+
+    .linkItems {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+
+        a {
+            color: white;
+            text-decoration: none;
+
+            span {
+                color: white;
+                font-size: 1rem;
+                font-family: 'Alata', sans-serif;
+            }
+        }
+    }
+
+    .right {
+        width: 100%;
+        text-align: center;
+
+        .media {
+            margin: 2rem auto;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            width: 50%;
+            justify-content: space-between;
+        }
+
+        .copy {
+            color: hsl(0, 0%, 55%);
+            font-family: 'Alata', sans-serif;
+            font-size: .9rem;
+        }
+    }
+
+}
+
+// mobile menu
+.menuContainer {
+    opacity: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 400ms ease-in-out, opacity 500ms ease-in;
+
+    .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .siteLogo {
+            width: 50%;
+        }
+    }
+
+    background: black;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: left;
+    padding: 2rem 1.3rem;
+
+    .items {
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        font-size: 2rem;
+
+        a,
+        span {
+            color: white;
+            font-family: 'Josefin Sans', sans-serif;
+            font-weight: lighter;
+        }
+    }
+}
+
+.start {
+    transform: scaleX(1);
+    transform-origin: right;
+    opacity: 1;
+}
+
+@media only screen and (min-width: 1300px) {
+    header {
+        background-image: url("../images/desktop/image-hero.jpg");
+        padding: 0 8rem;
+
+        .upperBar {
+            padding: 4rem 0;
+
+            .mobileMenu {
+                display: none;
+            }
+
+            .siteLogoContainer {
+                width: 17%;
+
+                .siteLogo {
+                    width: 100%;
+                }
+            }
+        }
+
+        .desktopMenu {
+            display: flex;
+            width: 40%;
+            justify-content: space-between;
+
+            span {
+                color: white;
+                font-size: 1.5rem;
+                font-family: 'Alata', sans-serif;
+                position: relative;
+                cursor: pointer;
+            }
+
+            span::after {
+                @include hoverUnderline();
+            }
+
+            span:hover::after {
+                transform: scaleX(1);
+                transform-origin: center;
+            }
+        }
+
+        .moto-container {
+            width: 60%;
+            padding: 2rem 2rem;
+
+            .moto {
+                font-size: 5rem;
+                line-height: 80px;
+            }
+        }
+
+        .menuContainer {
+            display: none;
+        }
+    }
+
+    main {
+        margin-top: 2rem;
+
+        .vr {
+            margin-bottom: 6rem;
+
+
+            .middle {
+                position: relative;
+                padding: 0 5rem;
+                width: 85%;
+                margin: auto;
+
+                .vrImage {
+                    background-image: url("../images/desktop/image-interactive.jpg");
+                    height: 27.4rem;
+                    width: 40rem;
+                }
+
+                .info {
+                    background-color: white;
+                    width: 40rem;
+                    height: 25rem;
+                    position: absolute;
+                    top: 110px;
+                    left: 580px;
+                    padding: 5rem;
+
+                    .interhead {
+                        font-size: 3rem;
+                        text-align: left;
+                    }
+
+                    article {
+                        font-size: 1rem;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+
+        .creation {
+            width: 85%;
+            margin: 8rem auto 0;
+            position: relative;
+
+            .creat {
+                text-align: left;
+                font-size: 3rem;
+            }
+
+            .all {
+                position: absolute;
+                top: -32px;
+                right: 0;
+                font-size: 1.5rem;
+            }
+
+            .creat-grid {
+                margin-top: 4rem;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                gap: 2rem;
+
+                div {
+                    width: 100%;
+                    height: 32.8rem;
+                    box-shadow: inset 0 -100px 150px black;
+                    position: relative;
+
+                    h3 {
+                        width: 70%;
+                        font-size: 2.2rem;
+                        bottom: 30px;
+                        left: 30px;
+                        color: white;
+                        z-index: 2;
+                    }
+
+                    &:hover {
+                        h3 {
+                            color: black;
+                            font-weight: 500;
+                        }
+
+                        cursor: pointer;
+                    }
+                }
+
+                div::after {
+                    content: '';
+                    position: absolute;
+                    background-color: white;
+                    opacity: 0;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    z-index: 1;
+                    transition: opacity 200ms ease-in-out;
+                }
+
+                div:hover::after {
+                    opacity: .7;
+                }
+
+                .earth {
+                    background-image: url("../images/desktop/image-deep-earth.jpg");
+                }
+
+                .night {
+                    background-image: url("../images/desktop/image-night-arcade.jpg");
+                }
+
+                .soccer {
+                    background-image: url("../images/desktop/image-soccer-team.jpg");
+                }
+
+                .grid {
+                    background-image: url("../images/desktop/image-grid.jpg");
+                }
+
+                .above {
+                    background-image: url("../images/desktop/image-from-above.jpg");
+                }
+
+                .pocket {
+                    background-image: url("../images/desktop/image-pocket-borealis.jpg");
+                }
+
+                .curiosity {
+                    background-image: url("../images/desktop/image-curiosity.jpg");
+                }
+
+                .FISHEYE {
+                    background-image: url("../images/desktop/image-fisheye.jpg");
+                }
+            }
+        }
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        .left {
+            padding: 0 2rem;
+
+            .siteLogoContainer {
+                width: 30%;
+                margin-left: 0;
+            }
+
+            .linkItems {
+                flex-direction: row;
+            }
+
+            a {
+                span {
+                    font-size: 1.3rem;
+                    position: relative;
+                }
+
+                span::after {
+                    @include hoverUnderline();
+                }
+
+                span:hover::after {
+                    transform: scaleX(1)
+                }
+            }
+        }
+
+        .right {
+            text-align: right;
+            padding: 0 4rem;
+
+            .media {
+                margin-right: 0;
+                width: 30%;
+
+                .media-items {
+                    position: relative;
+                }
+
+                .media-items::after {
+                    content: "";
+                    position: absolute;
+                    bottom: -10px;
+                    left: 0;
+                    height: 2px;
+                    width: 100%;
+                    background: white;
+                    transform: scaleX(0);
+                    transition: all 200ms ease-in-out;
+                }
+
+                .media-items:hover::after {
+                    transform: scaleX(1);
+                }
+            }
+
+            .copy {
+                font-size: 1rem;
+            }
+        }
+    }
+}
