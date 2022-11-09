@@ -19,7 +19,7 @@ h6 {
 @mixin hoverUnderline {
     content: '';
     position: absolute;
-    background-color: white;
+    background-color: #000;
     width: 100%;
     height: 2px;
     transform: scaleX(0);
@@ -31,7 +31,8 @@ h6 {
 
 header {
     height: 100vh;
-    background: url("../images/mobile/image-hero.jpg") no-repeat top;
+    background-color: #000;
+    // background: url("../images/mobile/image-hero.jpg") no-repeat top;
     background-size: cover;
     padding: 0 1.3rem;
 
@@ -62,6 +63,7 @@ header {
 
     .desktopMenu {
         display: none;
+        color: #000;
     }
 
     .moto-container {
@@ -84,9 +86,8 @@ main {
         padding: 6rem 1.3rem;
 
         .vrImage {
-            width: 100%;
-            height: 14.6rem;
-            background: url("../images/mobile/image-interactive.jpg") no-repeat top;
+            background-color: #000;
+            // background: url("../images/mobile/image-interactive.jpg") no-repeat top;
             background-size: contain;
         }
 
@@ -211,7 +212,7 @@ footer {
     margin-top: 6rem;
     background-color: black;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
 
     .siteLogoContainer {
@@ -220,6 +221,7 @@ footer {
 
         .siteLogo {
             width: 100%;
+            grid-area: 2rem;
         }
     }
 
@@ -315,7 +317,7 @@ footer {
 
 @media only screen and (min-width: 1300px) {
     header {
-        background-image: url("../images/desktop/image-hero.jpg");
+        // background-image: url("../images/desktop/image-hero.jpg");
         padding: 0 8rem;
 
         .upperBar {
@@ -338,6 +340,7 @@ footer {
             display: flex;
             width: 40%;
             justify-content: space-between;
+            color: black;
 
             span {
                 color: white;
@@ -386,13 +389,13 @@ footer {
                 margin: auto;
 
                 .vrImage {
-                    background-image: url("../images/desktop/image-interactive.jpg");
+                    // background-image: url("../images/desktop/image-interactive.jpg");
                     height: 27.4rem;
                     width: 40rem;
                 }
 
                 .info {
-                    background-color: white;
+                    background-color: #000;
                     width: 40rem;
                     height: 25rem;
                     position: absolute;

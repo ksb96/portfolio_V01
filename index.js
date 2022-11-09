@@ -13,7 +13,7 @@ openMenu.addEventListener("change", (e) => {
 closeMenu.checked = false;
 closeMenu.addEventListener("change", (e) => {
     if (closeMenu.checked) {
-        console.log('hello')
+        // console.log('hello')
         mobileMenu.classList.remove('start')
         closeMenu.checked = false;
         openMenu.checked = false;
