@@ -72,8 +72,9 @@ main .vr {
 }
 
 .expBorder{
+  margin-top: 2.5rem;
   border-style: solid;
-  border: 1px solid #000;
+  border: solid #000;
   border-radius: 10px;
   padding: 5px;
 }
@@ -102,18 +103,17 @@ main .vr .info article {
   color: hsl(0deg, 0%, 55%); */
 /* } */
 
-main .creation {
-  text-align: center;
-}
 
 main .creation .creat {
   font-size: 2rem;
   font-weight: 300;
+  font-weight: bold;
+  margin-left: 1rem;
 }
 
 main .creation .creat-grid {
   margin-top: 2rem;
-  display: grid;
+  display: flexbox;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(8, 1fr);
   align-items: center;
@@ -133,49 +133,49 @@ main .creation .creat-grid div h3 {
   padding: 0 1rem;
   position: absolute;
   bottom: 10px;
-  color: white;
+  /* color: white; */
   font-weight: 300;
   font-size: 1.5rem;
   width: 50%;
 }
 
 main .creation .creat-grid .earth {
-  background: url("../images/mobile/image-deep-earth.jpg") no-repeat top;
+  background: url("../images/desktop/storybook.jpg") no-repeat top;
   background-size: contain;
 }
 
 main .creation .creat-grid .night {
-  background: url("../images/mobile/image-night-arcade.jpg") no-repeat top;
+  background: url("") no-repeat top;
   background-size: contain;
 }
 
 main .creation .creat-grid .soccer {
-  background: url("../images/mobile/image-soccer-team.jpg") no-repeat top;
+  background: url("") no-repeat top;
   background-size: contain;
 }
 
 main .creation .creat-grid .grid {
-  background: url("../images/mobile/image-grid.jpg") no-repeat top;
+  background: url("") no-repeat top;
   background-size: contain;
 }
 
 main .creation .creat-grid .above {
-  background: url("../images/mobile/image-from-above.jpg") no-repeat top;
+  background: url("") no-repeat top;
   background-size: contain;
 }
 
 main .creation .creat-grid .pocket {
-  background: url("../images/mobile/image-pocket-borealis.jpg") no-repeat top;
+  background: url("") no-repeat top;
   background-size: contain;
 }
 
 main .creation .creat-grid .curiosity {
-  background: url("../images/mobile/image-curiosity.jpg") no-repeat top;
+  background: url("") no-repeat top;
   background-size: contain;
 }
 
 main .creation .creat-grid .FISHEYE {
-  background: url("../images/mobile/image-fisheye.jpg") no-repeat top;
+  background: url("") no-repeat top;
   background-size: contain;
 }
 
@@ -373,7 +373,7 @@ footer .right .copy {
     margin-top: 2rem;
   }
 
-  main .vr {
+  /* main .vr {
     margin-bottom: 6rem;
   }
 
@@ -395,8 +395,8 @@ footer .right .copy {
     height: 25rem;
     position: absolute;
     /* top: 110px; */
-    left: 580px;
-    padding: 5rem;
+    /* left: 580px;
+    padding: 5rem; */
   }
 
   main .vr .middle .info .interhead {
@@ -407,7 +407,7 @@ footer .right .copy {
   main .vr .middle .info article {
     font-size: 1rem;
     text-align: left;
-  }
+  } */
 
   main .creation {
     width: 85%;
@@ -477,7 +477,7 @@ footer .right .copy {
   }
 
   main .creation .creat-grid .earth {
-    background-image: url("../images/desktop/image-deep-earth.jpg");
+    background-image: url("./images/desktop/storybook.jpg");
   }
 
   main .creation .creat-grid .night {
