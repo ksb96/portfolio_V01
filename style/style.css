@@ -477,35 +477,19 @@ footer .right .copy {
   }
 
   main .creation .creat-grid .earth {
-    background-image: url("./images/desktop/storybook.jpg");
+    background-image: url("../images/desktop/storybook.jpg");
   }
 
   main .creation .creat-grid .night {
-    background-image: url("../images/desktop/image-night-arcade.jpg");
+    background-image: url("../images/desktop/news-1.jpg");
   }
 
   main .creation .creat-grid .soccer {
-    background-image: url("../images/desktop/image-soccer-team.jpg");
+    background-image: url("../images/desktop/doc.jpg");
   }
 
   main .creation .creat-grid .grid {
-    background-image: url("../images/desktop/image-grid.jpg");
-  }
-
-  main .creation .creat-grid .above {
-    background-image: url("../images/desktop/image-from-above.jpg");
-  }
-
-  main .creation .creat-grid .pocket {
-    background-image: url("../images/desktop/image-pocket-borealis.jpg");
-  }
-
-  main .creation .creat-grid .curiosity {
-    background-image: url("../images/desktop/image-curiosity.jpg");
-  }
-
-  main .creation .creat-grid .FISHEYE {
-    background-image: url("../images/desktop/image-fisheye.jpg");
+    background-image: url("../images/desktop/mang\ sys.jpg");
   }
 
   footer {

@@ -147,7 +147,7 @@ main {
             }
 
             .earth {
-                background: url("../images/desktop/storybook.jpg") no-repeat top;
+                background: url("../images/desktop/storybook.jpg");
                 background-size: contain;
             }
 
@@ -482,35 +482,19 @@ footer {
                 }
 
                 .earth {
-                    background-image: url("./images/desktop/storybook.jpg");
+                    background-image: url("../images/desktop/storybook.jpg");
                 }
 
                 .night {
-                    background-image: url("../images/desktop/image-night-arcade.jpg");
+                    background-image: url("../images/desktop/news-1.jpg");
                 }
 
                 .soccer {
-                    background-image: url("../images/desktop/image-soccer-team.jpg");
+                    background-image: url("../images/desktop/doc.jpg");
                 }
 
                 .grid {
-                    background-image: url("../images/desktop/image-grid.jpg");
-                }
-
-                .above {
-                    background-image: url("../images/desktop/image-from-above.jpg");
-                }
-
-                .pocket {
-                    background-image: url("../images/desktop/image-pocket-borealis.jpg");
-                }
-
-                .curiosity {
-                    background-image: url("../images/desktop/image-curiosity.jpg");
-                }
-
-                .FISHEYE {
-                    background-image: url("../images/desktop/image-fisheye.jpg");
+                    background-image: url("../images/desktop/mang\ sys.jpg");
                 }
             }
         }
