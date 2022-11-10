@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   text-decoration: none;
 }
 
@@ -19,18 +19,13 @@ h6 {
 header {
   height: 100vh;
   background-color: #000;
-  /* background: url("../images/mobile/image-hero.jpg") no-repeat top; */
   background-size: cover;
   padding: 0 1.3rem;
 }
 
 header .upperBar {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   width: 100%;
   padding: 2rem 0;
 }
@@ -66,21 +61,25 @@ header .moto-container .moto {
   font-size: 2.7rem;
   line-height: 43px;
   font-weight: 300;
-  color: #fff;
-}
-
-.mainIntro{
-  color: #fff;
+  color: white;
 }
 
 main .vr {
-  padding: 6rem 1.3rem;
+  padding-top: 1rem;
+  padding-bottom: 5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
+.expBorder{
+  border-style: solid;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 5px;
+}
+/* 
 main .vr .vrImage {
-  width: 100%;
-  height: 14.6rem;
-  background: url("../images/mobile/image-interactive.jpg") no-repeat top;
+  background-color: #fff;
   background-size: contain;
 }
 
@@ -95,13 +94,13 @@ main .vr .info .interhead {
   font-weight: 300;
 }
 
-main .vr .info p{
-  margin-top: 2.5rem;
-  line-height: 25px;
-  margin-top: 1.5rem;
-  font-family: 'Alata', sans-serif;
-  color: #8c8c8c;
-}
+main .vr .info article {
+  /* margin-top: 2.5rem; */
+  /* line-height: 25px; */
+  /* margin-top: 1.5rem; */
+  /* font-family: "Alata", sans-serif;
+  color: hsl(0deg, 0%, 55%); */
+/* } */
 
 main .creation {
   text-align: center;
@@ -114,15 +113,10 @@ main .creation .creat {
 
 main .creation .creat-grid {
   margin-top: 2rem;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: (1fr)[8];
-      grid-template-rows: repeat(8, 1fr);
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(8, 1fr);
+  align-items: center;
   justify-items: center;
   row-gap: 1rem;
 }
@@ -131,8 +125,7 @@ main .creation .creat-grid div {
   width: 21.1rem;
   height: 7.8rem;
   position: relative;
-  -webkit-box-shadow: inset 20px 0 80px black;
-          box-shadow: inset 20px 0 80px black;
+  box-shadow: inset 20px 0 80px black;
 }
 
 main .creation .creat-grid div h3 {
@@ -189,10 +182,10 @@ main .creation .creat-grid .FISHEYE {
 main .creation .all {
   margin-top: 2rem;
   border: 1px black solid;
-  padding: .5rem 3rem;
+  padding: 0.5rem 3rem;
   font-size: 1rem;
   background-color: transparent;
-  font-family: 'Alata', sans-serif;
+  font-family: "Alata", sans-serif;
   word-spacing: 8px;
   letter-spacing: 3px;
   cursor: pointer;
@@ -207,20 +200,9 @@ footer {
   padding: 3rem 0;
   margin-top: 6rem;
   background-color: black;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.left{
-  gap: 2rem;
+  flex-direction: row;
+  align-items: center;
 }
 
 footer .siteLogoContainer {
@@ -230,20 +212,14 @@ footer .siteLogoContainer {
 
 footer .siteLogoContainer .siteLogo {
   width: 100%;
+  grid-area: 2rem;
 }
 
 footer .linkItems {
   margin-top: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   gap: 1.5rem;
 }
 
@@ -255,7 +231,7 @@ footer .linkItems a {
 footer .linkItems a span {
   color: white;
   font-size: 1rem;
-  font-family: 'Alata', sans-serif;
+  font-family: "Alata", sans-serif;
 }
 
 footer .right {
@@ -265,35 +241,24 @@ footer .right {
 
 footer .right .media {
   margin: 2rem auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 1rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   width: 50%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 footer .right .copy {
-  color: #8c8c8c;
-  font-family: 'Alata', sans-serif;
-  font-size: .9rem;
+  color: hsl(0deg, 0%, 55%);
+  font-family: "Alata", sans-serif;
+  font-size: 0.9rem;
 }
 
 .menuContainer {
   opacity: 0;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  -webkit-transition: opacity 500ms ease-in, -webkit-transform 400ms ease-in-out;
-  transition: opacity 500ms ease-in, -webkit-transform 400ms ease-in-out;
+  transform: scaleX(0);
+  transform-origin: left;
   transition: transform 400ms ease-in-out, opacity 500ms ease-in;
-  transition: transform 400ms ease-in-out, opacity 500ms ease-in, -webkit-transform 400ms ease-in-out;
   background: black;
   color: white;
   width: 100vw;
@@ -306,15 +271,9 @@ footer .right .copy {
 }
 
 .menuContainer .top {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .menuContainer .top .siteLogo {
@@ -323,13 +282,8 @@ footer .right .copy {
 
 .menuContainer .items {
   margin-top: 5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 2rem;
   font-size: 2rem;
 }
@@ -337,148 +291,156 @@ footer .right .copy {
 .menuContainer .items a,
 .menuContainer .items span {
   color: white;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: lighter;
 }
 
 .start {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-  -webkit-transform-origin: right;
-          transform-origin: right;
+  transform: scaleX(1);
+  transform-origin: right;
   opacity: 1;
 }
 
 @media only screen and (min-width: 1300px) {
   header {
-    background-image: url("../images/desktop/image-hero.jpg");
     padding: 0 8rem;
   }
+
   header .upperBar {
     padding: 4rem 0;
   }
+
   header .upperBar .mobileMenu {
     display: none;
   }
+
   header .upperBar .siteLogoContainer {
     width: 17%;
   }
+
   header .upperBar .siteLogoContainer .siteLogo {
     width: 100%;
   }
+
   header .desktopMenu {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    color: #fff;
     width: 40%;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
+    color: black;
   }
+
   header .desktopMenu span {
-    color: #fff;
+    color: white;
     font-size: 1.5rem;
-    font-family: 'Alata', sans-serif;
+    font-family: "Alata", sans-serif;
     position: relative;
     cursor: pointer;
   }
+
   header .desktopMenu span::after {
-    content: '';
+    content: "";
     position: absolute;
-    background-color: #fff;
+    background-color: #000;
     width: 100%;
     height: 2px;
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
+    transform: scaleX(0);
     bottom: 0;
     left: 0;
-    -webkit-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out;
     border-radius: 20px;
   }
+
   header .desktopMenu span:hover::after {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-    -webkit-transform-origin: center;
-            transform-origin: center;
-            color: #fff;
+    transform: scaleX(1);
+    transform-origin: center;
   }
+
   header .moto-container {
     width: 60%;
     padding: 2rem 2rem;
   }
+
   header .moto-container .moto {
     font-size: 5rem;
     line-height: 80px;
   }
+
   header .menuContainer {
     display: none;
   }
+
   main {
     margin-top: 2rem;
   }
+
   main .vr {
     margin-bottom: 6rem;
   }
+
   main .vr .middle {
     position: relative;
     padding: 0 5rem;
     width: 85%;
     margin: auto;
   }
+
   main .vr .middle .vrImage {
-    background-image: url("../images/desktop/image-interactive.jpg");
     height: 27.4rem;
     width: 40rem;
   }
+
   main .vr .middle .info {
-    background-color: white;
+    background-color: #fff;
     width: 40rem;
     height: 25rem;
     position: absolute;
-    top: 110px;
+    /* top: 110px; */
     left: 580px;
     padding: 5rem;
   }
+
   main .vr .middle .info .interhead {
     font-size: 3rem;
     text-align: left;
   }
-  main .vr .middle .info p{
+
+  main .vr .middle .info article {
     font-size: 1rem;
     text-align: left;
   }
+
   main .creation {
     width: 85%;
     margin: 8rem auto 0;
     position: relative;
   }
+
   main .creation .creat {
     text-align: left;
     font-size: 3rem;
   }
+
   main .creation .all {
     position: absolute;
     top: -32px;
     right: 0;
     font-size: 1.5rem;
   }
+
   main .creation .creat-grid {
     margin-top: 4rem;
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
-    -ms-grid-rows: (1fr)[2];
-        grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 2rem;
   }
+
   main .creation .creat-grid div {
     width: 100%;
     height: 32.8rem;
-    -webkit-box-shadow: inset 0 -100px 150px black;
-            box-shadow: inset 0 -100px 150px black;
+    box-shadow: inset 0 -100px 150px black;
     position: relative;
   }
+
   main .creation .creat-grid div h3 {
     width: 70%;
     font-size: 2.2rem;
@@ -487,15 +449,18 @@ footer .right .copy {
     color: white;
     z-index: 2;
   }
+
   main .creation .creat-grid div:hover {
     cursor: pointer;
   }
+
   main .creation .creat-grid div:hover h3 {
     color: black;
     font-weight: 500;
   }
+
   main .creation .creat-grid div::after {
-    content: '';
+    content: "";
     position: absolute;
     background-color: white;
     opacity: 0;
@@ -504,88 +469,99 @@ footer .right .copy {
     top: 0;
     left: 0;
     z-index: 1;
-    -webkit-transition: opacity 200ms ease-in-out;
     transition: opacity 200ms ease-in-out;
   }
+
   main .creation .creat-grid div:hover::after {
-    opacity: .7;
+    opacity: 0.7;
   }
+
   main .creation .creat-grid .earth {
     background-image: url("../images/desktop/image-deep-earth.jpg");
   }
+
   main .creation .creat-grid .night {
     background-image: url("../images/desktop/image-night-arcade.jpg");
   }
+
   main .creation .creat-grid .soccer {
     background-image: url("../images/desktop/image-soccer-team.jpg");
   }
+
   main .creation .creat-grid .grid {
     background-image: url("../images/desktop/image-grid.jpg");
   }
+
   main .creation .creat-grid .above {
     background-image: url("../images/desktop/image-from-above.jpg");
   }
+
   main .creation .creat-grid .pocket {
     background-image: url("../images/desktop/image-pocket-borealis.jpg");
   }
+
   main .creation .creat-grid .curiosity {
     background-image: url("../images/desktop/image-curiosity.jpg");
   }
+
   main .creation .creat-grid .FISHEYE {
     background-image: url("../images/desktop/image-fisheye.jpg");
   }
+
   footer {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
+
   footer .left {
     padding: 0 2rem;
   }
+
   footer .left .siteLogoContainer {
     width: 30%;
     margin-left: 0;
   }
+
   footer .left .linkItems {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
   }
+
   footer .left a span {
     font-size: 1.3rem;
     position: relative;
   }
+
   footer .left a span::after {
-    content: '';
+    content: "";
     position: absolute;
-    background-color: white;
+    background-color: #000;
     width: 100%;
     height: 2px;
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
+    transform: scaleX(0);
     bottom: 0;
     left: 0;
-    -webkit-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out;
     border-radius: 20px;
   }
+
   footer .left a span:hover::after {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
+    transform: scaleX(1);
   }
+
   footer .right {
     text-align: right;
     padding: 0 4rem;
   }
+
   footer .right .media {
     margin-right: 0;
     width: 30%;
   }
+
   footer .right .media .media-items {
     position: relative;
   }
+
   footer .right .media .media-items::after {
     content: "";
     position: absolute;
@@ -594,17 +570,17 @@ footer .right .copy {
     height: 2px;
     width: 100%;
     background: white;
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-    -webkit-transition: all 200ms ease-in-out;
+    transform: scaleX(0);
     transition: all 200ms ease-in-out;
   }
+
   footer .right .media .media-items:hover::after {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
+    transform: scaleX(1);
   }
+
   footer .right .copy {
     font-size: 1rem;
   }
 }
+
 /*# sourceMappingURL=style.css.map */
